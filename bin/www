@@ -9,6 +9,22 @@ var debug = require('debug')('mtech-demo:server');
 var http = require('http');
 
 /**
+ * Get OpenWeatherMap APPID from environment and 
+ * store in Express.
+ */
+
+var appid = checkAppID(process.env.APPID);
+app.set('appid', appid);
+
+function checkAppID(id) {
+  if(id === undefined) {
+    throw "No OpenWeatherMap APPID environment variable given!";
+  }
+  debug('Using APPID ' + id);
+  return id;
+}
+
+/**
  * Get port from environment and store in Express.
  */
 
