@@ -33,3 +33,5 @@ npm-debug.log
 .DS_STORE
 sample_output.json
 
+# Webpack bundle
+public/javascripts/bundle.js
