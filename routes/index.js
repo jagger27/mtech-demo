@@ -14,6 +14,7 @@ router.post('/location', function (req, res) {
 
   request.get('api.openweathermap.org/data/2.5/weather')
     .query({
+      units: 'metric',
       lat: latitude,
       lon: longitude,
       APPID: req.app.get('appid')

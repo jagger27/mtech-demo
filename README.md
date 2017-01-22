@@ -1,12 +1,15 @@
 # OpenWeatherMap Demo App
 
 ## Description
-A staightforward Node/Express demo app originally made as an application for [Massless Technologies](http://www.masslesstech.ca). 
+A relatively staightforward Node/Express demo app originally made as an application for [Massless Technologies](http://www.masslesstech.ca). 
+
+### Details
+Geolocation coordinates are sent from the client to the server and are cached in a cookie for the remainder of the session. Weather data is also kept in a cookie for 15 minutes after it is fetched via the OpenWeatherMap API.
 
 ## Usage
-- `npm install`
-- Put your OpenWeatherMap API key in `settings.json` 
-- `npm start`
+- `npm install` (runs Webpack)
+- Set the `APPID` environment variable to you OpenWeatherMap API 
+- `APPID=<key> npm start`
 - Access from http://localhost:3000/
 - Allow HTML5 geolocation access in your browser
 

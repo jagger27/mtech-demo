@@ -2,4 +2,15 @@ extends layout
 
 block content
   h1= title
-  
+  div#status Loading...
+  div#weather
+    h2.w-city Weather for 
+    h3.w-current Currently 
+    ul
+      li.w-humidity Humidity: 
+      li.w-pressure Pressure: 
+      li.w-wind Wind: 
+      li.w-clouds Cloud cover: 
+      li.w-sunrise Sunrise: 
+      li.w-sunset Sunset: 
+    
