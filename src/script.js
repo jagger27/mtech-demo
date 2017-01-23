@@ -1,5 +1,5 @@
 var request = require('superagent');
-var $ = require('zepto');
+var $ = require('jquery-slim');
 var Cookies = require('js-cookie');
 var moment = require('moment');
 

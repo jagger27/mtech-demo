@@ -8,6 +8,9 @@ module.exports = {
         filename: "bundle.js"
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery-slim'
+        }),
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
     ]
 };
