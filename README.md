@@ -8,7 +8,7 @@ Geolocation coordinates are sent from the client to the server and are cached in
 
 ## Usage
 - `npm install` (runs Webpack)
-- Set the `APPID` environment variable to you OpenWeatherMap API 
+- Set the `APPID` environment variable to your OpenWeatherMap API key
 - `APPID=<key> npm start`
 - Access from http://localhost:3000/
 - Allow HTML5 geolocation access in your browser
