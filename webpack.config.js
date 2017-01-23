@@ -14,6 +14,7 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             Cookies: 'js-cookie'
-        })
+        }),
+        new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
     ]
 };

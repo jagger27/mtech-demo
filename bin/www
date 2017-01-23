@@ -18,7 +18,8 @@ app.set('appid', appid);
 
 function checkAppID(id) {
   if(id === undefined) {
-    throw "No OpenWeatherMap APPID environment variable given!";
+    console.error("No OpenWeatherMap APPID environment variable given");
+    process.exit(9); // indicates Invalid Argument 
   }
   debug('Using APPID ' + id);
   return id;
