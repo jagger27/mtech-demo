@@ -8,13 +8,6 @@ module.exports = {
         filename: "bundle.js"
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery'
-        }),
-        new webpack.ProvidePlugin({
-            Cookies: 'js-cookie'
-        }),
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
     ]
 };
